@@ -1,3 +1,5 @@
+@import 'theme';
+
 // nav styling
 
 .main-nav {
@@ -36,7 +38,7 @@
         .nav-list {
             li {
                 a {
-                    color: $light !important;
+                    // color: $light !important;
                 }
             }
         }
