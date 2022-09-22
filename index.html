@@ -17,10 +17,10 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link
-    rel="stylesheet"
-    media="screen and (max-width: 1170px)"
-    href="assets/css/res.css"
-  />
+      rel="stylesheet"
+      media="screen and (max-width: 1170px)"
+      href="assets/css/res.css"
+    />
     <!-- Bootsrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -46,6 +46,85 @@
   </head>
 
   <body>
-    
+    <!-- Navbar -->
+    <!-- nav bar -->
+    <nav class="main-nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="l-part">
+            <div class="logo-wrapper">
+              <h4 class="logo-text">Murtaza Neher Wala</h4>
+            </div>
+            <ul class="nav-list">
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="#skills" class="active">Skills</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="">Projecs</a></li>
+              <li><a href="#contat">Contact</a></li>
+            </ul>
+          </div>
+          <div class="r-part">
+            <button href="#" class="main-btn border">Resume</button>
+            <button href="#" class="main-btn">Hire Now</button>
+            <div id="toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mob-nav">
+          <ul class="nav-list">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="#skills" class="active">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Projecs</a></li>
+            <li><a href="#contat">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header start -->
+    <header class="header sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="l-part">
+              <!-- <img src="assets/images/hello.png" alt=""> -->
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="r-part"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="test pt-40 pb-40"></div>
+
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- BNootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#toggle").click(function () {
+        $(this).toggleClass("on");
+        $(".mob-nav").slideToggle();
+      });
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 50) {
+          $(".main-nav").addClass("sticky");
+        } else {
+          $(".main-nav").removeClass("sticky");
+        }
+      });
+    </script>
   </body>
 </html>
