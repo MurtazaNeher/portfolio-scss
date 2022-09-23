@@ -46,7 +46,6 @@
   </head>
 
   <body>
-
     <!-- Navbar start -->
     <nav class="main-nav">
       <div class="nav-wrapper">
@@ -150,13 +149,20 @@
         <div class="row row-wrap-reverse">
           <div class="col-lg-8 col-md-8 col-sm-12 col-12">
             <div class="l-part">
-              <h1 class="subtitle ">
-               Welcome to my portfolio
-              </h1>
+              <h1 class="subtitle">Welcome to my portfolio</h1>
 
               <h2 class="title">
-                Hi, I’m <span class="primary-c">Murtaza Neher Wala</span>                            
+                Hi, I’m <span class="primary-c">Murtaza Neher Wala</span>
               </h2>
+
+              <a
+                href=""
+                class="typewrite title"
+                data-period="2000"
+                data-type='[  "Web Developer", "Tech Enthusiast", "Problem Solver"]'
+              >
+                <span class="wrap"></span>
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -166,7 +172,6 @@
       </div>
     </header>
     <!-- Header End -->
-
 
     <div class="test pt-40 pb-40"></div>
 
@@ -190,7 +195,6 @@
       $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
           $(".main-nav").addClass("sticky");
-          
         } else {
           $(".main-nav").removeClass("sticky");
         }
