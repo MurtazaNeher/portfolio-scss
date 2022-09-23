@@ -47,13 +47,19 @@
         background-repeat: no-repeat;
         background-size: cover;
         // opacity: 0.81;
-        // filter: blur(0);
+        backdrop-filter: blur(5px);
         mix-blend-mode: soft-light;
-        animation-name: blurBg;
-        animation-duration: 10s;
+        // animation-name: blurBg;
+        // animation-duration: 10s;
         // animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
+        // animation-timing-function: ease-in;
 
+    }
+
+    .typwriter-wr{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
     }
 
 

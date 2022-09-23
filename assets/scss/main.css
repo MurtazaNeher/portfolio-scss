@@ -172,8 +172,11 @@ button {
 .para {
   font-size: 16px;
   line-height: 30px;
-  color: var(--color-lightn);
+  color: #c4cfde;
   opacity: 0.9;
+}
+.para.not-full {
+  padding-right: 19%;
 }
 
 .sec {
@@ -523,8 +526,10 @@ button {
   fill: #64ffda !important;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.side-menu .mob-nav .mob-nav-head .logo-wrapper .logo svg .-logo-stroke {
+.side-menu .mob-nav .mob-nav-head .logo-wrapper .logo svg .logo-stroke {
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 0 !important;
+  width: 0 !important;
 }
 .side-menu .mob-nav .mob-nav-head .logo-wrapper .logo:hover svg .logo-stroke {
   fill: rgba(100, 255, 218, 0.1);
@@ -611,13 +616,14 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   mix-blend-mode: soft-light;
-  -webkit-animation-name: blurBg;
-          animation-name: blurBg;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+}
+.header-sec .typwriter-wr {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .test {

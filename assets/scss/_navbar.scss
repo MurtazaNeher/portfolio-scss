@@ -1,7 +1,7 @@
 @import 'theme';
 
 .main-nav {
-    position:absolute ;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 0;
@@ -16,7 +16,7 @@
         backdrop-filter: blur(10px);
         filter: none !important;
         box-shadow: 0 10px 30px -10px $navy-shadow;
-        
+
 
         .nav-wrapper {
             padding: 14px 45px;
@@ -149,7 +149,7 @@
     transition: all 0.3s;
     backface-visibility: hidden;
     margin-left: auto;
-   
+
     &.one {
         width: 100%;
 
@@ -305,8 +305,11 @@
                             transition: $transition;
                         }
 
-                        .-logo-stroke {
+                        .logo-stroke {
                             transition: $transition;
+                            height: 0 !important;
+                            width: 0 !important;
+
                         }
                     }
 
