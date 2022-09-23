@@ -9,6 +9,10 @@
     font-family: $main;
 }
 
+body{
+    position: relative;
+}
+
 li {
     list-style: none;
 }
@@ -18,12 +22,52 @@ button {
     border: none;
 }
 
-body {}
+.container{
+    max-width: 1320px !important;
+}
+
+.main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0.7em 1.2em;
+    border: 1px solid $primary;
+    cursor: pointer;
+    background-color: $primary;
+    line-height: 1;
+    border-radius: 4px;
+    font-family: $main;
+    font-size: 13px;
+    font-weight: 500;
+    transition: $transition;
+    color: $dark;
+
+    &:hover {
+        background: transparent;
+        color: $primary;
+        border-color: $primary
+    }
+
+    &.border {
+        border: 1px solid $primary !important;
+        background: transparent;
+        color: $primary;
+        &:hover {
+            background: $primary-tint;
+            color: $primary;
+        }
+
+    }
+}
 
 .sec {
     position: relative;
 }
 
+// .side-menu{
+//     display: none;
+// }
 .header {
     height: 100vh;
 
@@ -39,6 +83,24 @@ body {}
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        filter: hue-rotate(150deg);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: calc(100% + 100px);
+        width: 100%;
+        background: $navy;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+        filter: blur(10px);
+        mix-blend-mode: multiply;
+
     }
 
 

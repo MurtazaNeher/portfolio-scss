@@ -1,13 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
 // colors
+
 $white : #ffffff;
 $black : #000000;
 $dark:#060606;
-$primary:#ff014f;
+$primary:#64ffda;
+// $primary:#ff014f;
+$secondary-color:#ff014f;
+$primary-tint:rgba(100, 255, 218, 0.1);
 $bg:#212428;
 $bg-dark :#202020;
 $navy:#0A192F;
+$light-navy:#112240;
+$navy-shadow:rgba(2, 12, 27, 0.7);
 
 // Fonts
-$main :'Poppins', sans-serif;
-$fira :'Fira Code', monospace;;
+$main :'Poppins',
+sans-serif;
+$secondary:'Montserrat',
+sans-serif;
+$fira :'Fira Code',
+monospace;
+
+// Shadows
+$shadow-1: 10px 10px 19px #1c1e22,
+-10px -10px 19px #262a2e;
+$shadow-2: inset 21px 21px 19px #181a1d,
+inset -21px -21px 19px #202225;
+$inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+-1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+$shadow-white-3: 5px 5px 15px #D1D9E6,
+-5px -5px 15px #ffffff;
+
+// Transitions
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

@@ -13,7 +13,12 @@
         position: fixed !important;
         background: rgba(6, 16, 31, 0.85);
         backdrop-filter: blur(15px);
-        box-shadow: 0px 0px 38px -29px rgb(66 68 90);
+        box-shadow: 0 10px 30px -10px $navy-shadow;
+
+        .nav-wrapper {
+            padding: 14px 45px;
+
+        }
     }
 
     .nav-wrapper {
@@ -42,6 +47,10 @@
                     height: 50px;
 
                     stroke: $primary;
+
+                    .logo-inner {
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -57,6 +66,7 @@
             align-items: center;
             padding-left: 0;
             margin-bottom: 0;
+            margin-right: 1em;
 
             li {
 
@@ -68,8 +78,15 @@
                     font-weight: 400;
                     transition: all 0.3s;
                     position: relative;
-                    padding: 0.8em 1em;
-                    font-family: $fira;
+                    padding: 0.5em 1em;
+                    font-family: $secondary;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $primary;
+
+
+                    }
 
                     &.active {
                         position: relative;
@@ -77,13 +94,13 @@
 
                     &:before {
                         counter-increment: nav-item;
-                        content: "0" counter(nav-item) ".";
-                        margin-right: 5px;
+                        content: "0"counter(nav-item) ".";
+                        margin-right: 3px;
                         color: $primary;
-                        font-size: 14px;
-                        font-weight: 100;
+                        font-size: 13px;
                         font-family: $fira;
                         text-align: right;
+                        transition: $transition;
                     }
                 }
             }
@@ -134,15 +151,40 @@
     .main-nav .nav-wrapper {
         padding: 10px 15px;
     }
+    .side-menu{
+        display: flex;
+    }
+}
+
+.side-menu {
+    display: flex;
+    visibility: visible;
+    position: fixed;
+    z-index: 1001;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: min(75vw , 400px);
+    min-height: 100vh;
+    background-color: $light-navy;
+    box-shadow: -10px 0px 30px -15px $navy-shadow;
+    transition: $transition;
+
+
+    &.hidden {
+        transform: translateX(100vw);
+    }
+
+    &.visible {
+        transform: translateX(0vw);
+
+    }
+
 }
 
 .mob-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 600px;
-    background: $white;
+
+    background: $bg;
     margin: 0 auto;
     padding: 12px 0px;
     display: none;
