@@ -1,19 +1,22 @@
 @import 'theme';
 
 .main-nav {
-    position: sticky;
+    position:absolute ;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 99;
     transition: all 0.3s;
     counter-reset: nav-item;
+    overflow: hidden;
 
     &.sticky {
         position: fixed !important;
-        background: rgba(6, 16, 31, 0.85);
-        backdrop-filter: blur(15px);
+        background: rgba(10, 25, 47, 0.85);
+        backdrop-filter: blur(10px);
+        filter: none !important;
         box-shadow: 0 10px 30px -10px $navy-shadow;
+        
 
         .nav-wrapper {
             padding: 14px 45px;
@@ -26,7 +29,7 @@
         align-items: center;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 45px;
+        padding: 28px 50px;
         transition: all 0.3s;
 
         .l-part {
@@ -42,16 +45,35 @@
                     color: $primary;
                 }
 
-                svg {
-                    width: 50px;
-                    height: 50px;
+                .logo {
+                    transition: $transition;
 
-                    stroke: $primary;
+                    svg {
+                        width: 48px;
+                        height: 45px;
+                        stroke: $primary;
+                        transition: $transition;
+                        cursor: pointer;
 
-                    .logo-inner {
-                        width: 50%;
+                        .logo-icon {
+                            fill: $primary !important;
+                            transition: $transition;
+                        }
+
+                        .-logo-stroke {
+                            transition: $transition;
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            .logo-stroke {
+                                fill: $primary-tint;
+                            }
+                        }
                     }
                 }
+
             }
         }
 
@@ -79,7 +101,7 @@
                     transition: all 0.3s;
                     position: relative;
                     padding: 0.5em 1em;
-                    font-family: $secondary;
+                    font-family: $font-secondary;
                     transition: $transition;
 
                     &:hover {
@@ -110,7 +132,7 @@
 
 
 #toggle {
-    width: 30px;
+    width: 40px;
     height: 30px;
     cursor: pointer;
     display: none;
@@ -124,19 +146,17 @@
 #toggle div {
     height: 3px;
     background: $primary;
-    margin: 3px auto;
     transition: all 0.3s;
     backface-visibility: hidden;
     margin-left: auto;
-    margin-right: 0;
-
+   
     &.one {
         width: 100%;
 
     }
 
     &.two {
-        width: 70%;
+        width: 75%;
 
     }
 
@@ -171,6 +191,11 @@
 @media (max-width: 736px) {
 
     .main-nav {
+
+        .nav-wrapper {
+            padding: 1em !important;
+        }
+
         &.sticky {
 
             .nav-wrapper {
@@ -192,6 +217,7 @@
 
     #toggle {
         display: flex;
+        gap: 6px;
     }
 
     .main-nav .nav-wrapper {
@@ -256,8 +282,43 @@
             gap: 20px;
             width: 100%;
 
-            svg {
-                stroke: $primary;
+            .logo-wrapper {
+
+                .logo-text {
+                    font-size: 27px;
+                    font-weight: 600;
+                    color: $primary;
+                }
+
+                .logo {
+                    transition: $transition;
+
+                    svg {
+                        width: 48px;
+                        height: 45px;
+                        stroke: $primary;
+                        transition: $transition;
+                        cursor: pointer;
+
+                        .logo-icon {
+                            fill: $primary !important;
+                            transition: $transition;
+                        }
+
+                        .-logo-stroke {
+                            transition: $transition;
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            .logo-stroke {
+                                fill: $primary-tint;
+                            }
+                        }
+                    }
+                }
+
             }
 
             .cont {

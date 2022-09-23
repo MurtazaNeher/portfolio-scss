@@ -5,8 +5,8 @@
 $white : #ffffff;
 $black : #000000;
 $dark:#060606;
+$light:#c4cfde;
 $primary:#64ffda;
-// $primary:#ff014f;
 $secondary-color:#ff014f;
 $primary-tint:rgba(100, 255, 218, 0.1);
 $bg:#212428;
@@ -18,7 +18,7 @@ $navy-shadow:rgba(2, 12, 27, 0.7);
 // Fonts
 $main :'Poppins',
 sans-serif;
-$secondary:'Montserrat',
+$font-secondary:'Montserrat',
 sans-serif;
 $fira :'Fira Code',
 monospace;
@@ -34,4 +34,4 @@ $shadow-white-3: 5px 5px 15px #D1D9E6,
 -5px -5px 15px #ffffff;
 
 // Transitions
-$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
