@@ -2,19 +2,49 @@
 @import 'spacing';
 @import 'navbar';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $main;
 }
 
-
-.header{
-    height: 100vh;
-    background: #000;
+li {
+    list-style: none;
 }
 
-.test{
+button {
+    outline: none;
+    border: none;
+}
+
+body {}
+
+.sec {
+    position: relative;
+}
+
+.header {
     height: 100vh;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: calc(100% + 100px);
+        width: 100%;
+        background: url(/assets/images/hero_main.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
+
+.test {
+    height: 100vh;
+    border: none;
 }

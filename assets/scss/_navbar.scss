@@ -1,41 +1,27 @@
 @import 'theme';
 
-// nav styling
-
 .main-nav {
-
-    .container {
-        max-width: 1500px !important;
-    }
-
     position: sticky;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 99;
-    background: rgba(10, 25, 47);
-    backdrop-filter: blur(10px);
     transition: all 0.3s;
+    counter-reset: nav-item;
 
     &.sticky {
-        position: sticky;
-        background: $dark;
-        background: rgba(10, 25, 47, 0.85);
-        backdrop-filter: blur(10px);
+        position: fixed !important;
+        background: rgba(6, 16, 31, 0.85);
+        backdrop-filter: blur(15px);
         box-shadow: 0px 0px 38px -29px rgb(66 68 90);
-
-
-        .nav-wrapper {
-            padding: 15px 0px;
-        }
-
     }
 
     .nav-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 0px;
+        align-items: center;
+        padding: 24px 45px;
         transition: all 0.3s;
 
         .l-part {
@@ -48,7 +34,14 @@
                 .logo-text {
                     font-size: 27px;
                     font-weight: 600;
-                    color: $white;
+                    color: $primary;
+                }
+
+                svg {
+                    width: 50px;
+                    height: 50px;
+
+                    stroke: $primary;
                 }
             }
         }
@@ -57,7 +50,6 @@
             display: flex;
             align-items: center;
             gap: 12px;
-
         }
 
         .nav-list {
@@ -70,47 +62,28 @@
 
                 a {
                     display: inline-block;
-                    padding: 12px 20px;
                     font-size: 14px;
                     color: $white;
                     text-decoration: none;
-                    font-weight: 500;
+                    font-weight: 400;
                     transition: all 0.3s;
                     position: relative;
+                    padding: 0.8em 1em;
+                    font-family: $fira;
 
                     &.active {
                         position: relative;
-
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            left: 20%;
-                            bottom: 5px;
-                            width: 60%;
-                            height: 2px;
-                            background: $primary;
-                            transition: all 0.5s;
-                        }
                     }
 
                     &:before {
-                        content: '';
-                        position: absolute;
-                        left: 20%;
-                        bottom: 5px;
-                        width: 0%;
-                        height: 2px;
-                        background: $primary;
-                        transition: all 0.5s;
-                    }
-
-                    &:hover {
-                        // color: $orange;
-                        // transform: translateX(-2px);
-
-                        &:before {
-                            width: 60%;
-                        }
+                        counter-increment: nav-item;
+                        content: "0" counter(nav-item) ".";
+                        margin-right: 5px;
+                        color: $primary;
+                        font-size: 14px;
+                        font-weight: 100;
+                        font-family: $fira;
+                        text-align: right;
                     }
                 }
             }

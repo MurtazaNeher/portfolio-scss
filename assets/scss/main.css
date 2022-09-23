@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
 .pb-20 {
   padding-bottom: 20px !important;
 }
@@ -79,117 +81,79 @@
 }
 
 .main-nav {
+  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 99;
-  background: rgb(10, 25, 47);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-.main-nav .container {
-  max-width: 1500px !important;
+  counter-reset: nav-item;
 }
 .main-nav.sticky {
-  position: sticky;
-  background: #060606;
-  background: rgba(10, 25, 47, 0.85);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-box-shadow: 0px 0px 38px -29px rgb(66, 68, 90);
-          box-shadow: 0px 0px 38px -29px rgb(66, 68, 90);
-}
-.main-nav.sticky .nav-wrapper {
-  padding: 15px 0px;
+  position: fixed !important;
+  background: rgba(6, 16, 31, 0.85);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 38px -29px rgb(66, 68, 90);
 }
 .main-nav .nav-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 0px;
-  -webkit-transition: all 0.3s;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 45px;
   transition: all 0.3s;
 }
 .main-nav .nav-wrapper .l-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .main-nav .nav-wrapper .l-part .logo-wrapper .logo-text {
   font-size: 27px;
   font-weight: 600;
-  color: #ffffff;
+  color: #ff014f;
+}
+.main-nav .nav-wrapper .l-part .logo-wrapper svg {
+  width: 50px;
+  height: 50px;
+  stroke: #ff014f;
 }
 .main-nav .nav-wrapper .r-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 12px;
 }
 .main-nav .nav-wrapper .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 0;
   margin-bottom: 0;
 }
 .main-nav .nav-wrapper .nav-list li a {
   display: inline-block;
-  padding: 12px 20px;
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
-  -webkit-transition: all 0.3s;
+  font-weight: 400;
   transition: all 0.3s;
   position: relative;
+  padding: 0.8em 1em;
+  font-family: "Fira Code", monospace;
 }
 .main-nav .nav-wrapper .nav-list li a.active {
   position: relative;
 }
-.main-nav .nav-wrapper .nav-list li a.active:before {
-  content: "";
-  position: absolute;
-  left: 20%;
-  bottom: 5px;
-  width: 60%;
-  height: 2px;
-  background: #ff1e5c;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
 .main-nav .nav-wrapper .nav-list li a:before {
-  content: "";
-  position: absolute;
-  left: 20%;
-  bottom: 5px;
-  width: 0%;
-  height: 2px;
-  background: #ff1e5c;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.main-nav .nav-wrapper .nav-list li a:hover:before {
-  width: 60%;
+  counter-increment: nav-item;
+  content: "0" counter(nav-item) ".";
+  margin-right: 5px;
+  color: #ff014f;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Fira Code", monospace;
+  text-align: right;
 }
 
 #toggle {
@@ -204,15 +168,13 @@
   height: 5px;
   background: #ffffff;
   margin: 4px auto;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 #toggle.on .one {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-          transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 #toggle.on .two {
@@ -220,8 +182,7 @@
 }
 
 #toggle.on .three {
-  -webkit-transform: rotate(-45deg) translate(7px, -8px);
-          transform: rotate(-45deg) translate(7px, -8px);
+  transform: rotate(-45deg) translate(7px, -8px);
 }
 
 @media (max-width: 736px) {
@@ -269,16 +230,41 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.sec {
+  position: relative;
 }
 
 .header {
   height: 100vh;
-  background: #000;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  height: calc(100% + 100px);
+  width: 100%;
+  background: url(/assets/images/hero_main.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .test {
   height: 100vh;
-}
+  border: none;
+}/*# sourceMappingURL=main.css.map */
