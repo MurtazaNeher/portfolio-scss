@@ -110,24 +110,51 @@
 
 
 #toggle {
-    width: 28px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
     display: none;
+    z-index: 9999999999999999999;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: $transition;
 }
 
 #toggle div {
-    width: 100%;
-    height: 5px;
-
-    background: $white;
-    margin: 4px auto;
+    height: 3px;
+    background: $primary;
+    margin: 3px auto;
     transition: all 0.3s;
     backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: 0;
+
+    &.one {
+        width: 100%;
+
+    }
+
+    &.two {
+        width: 70%;
+
+    }
+
+    &.three {
+        width: 50%;
+
+    }
+}
+
+
+#toggle.on {
+    transform: rotate(360deg);
 }
 
 #toggle.on .one {
     transform: rotate(45deg) translate(5px, 5px);
+    width: 100%;
+
 }
 
 #toggle.on .two {
@@ -136,22 +163,42 @@
 
 #toggle.on .three {
     transform: rotate(-45deg) translate(7px, -8px);
+    width: 100%;
+
 }
 
 
 @media (max-width: 736px) {
+
+    .main-nav {
+        &.sticky {
+
+            .nav-wrapper {
+                padding: 10px 15px;
+
+            }
+        }
+    }
+
     .main-nav .nav-wrapper .r-part .nav-list {
         display: none;
     }
 
+    .main-nav .nav-wrapper .r-part {
+        button {
+            display: none;
+        }
+    }
+
     #toggle {
-        display: block;
+        display: flex;
     }
 
     .main-nav .nav-wrapper {
         padding: 10px 15px;
     }
-    .side-menu{
+
+    .side-menu {
         display: flex;
     }
 }
@@ -161,14 +208,26 @@
     visibility: visible;
     position: fixed;
     z-index: 1001;
-    right: 0;
-    bottom: 0;
+    right: -2px;
+    bottom: -2px;
     top: 0;
-    width: min(75vw , 400px);
+    width: min(75vw, 400px);
     min-height: 100vh;
     background-color: $light-navy;
     box-shadow: -10px 0px 30px -15px $navy-shadow;
     transition: $transition;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        transform: translateX(-100%);
+        backdrop-filter: blur(6px);
+        z-index: 99;
+        top: 0;
+        left: 0;
+    }
 
 
     &.hidden {
@@ -178,33 +237,87 @@
     &.visible {
         transform: translateX(0vw);
 
+        &:before {
+            width: 200%;
+        }
+
     }
 
-}
 
-.mob-nav {
+    .mob-nav {
 
-    background: $bg;
-    margin: 0 auto;
-    padding: 12px 0px;
-    display: none;
-}
+        position: relative;
+        padding: 20px 20px;
+        width: 100%;
 
-.mob-nav .nav-list {
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 0;
-}
+        .mob-nav-head {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
 
-.mob-nav .nav-list li:last-child a {
-    border: none !important;
-}
+            svg {
+                stroke: $primary;
+            }
 
-.mob-nav .nav-list li a {
-    padding: 15px 15px;
-    display: block;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $dark;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            .cont {
+                h4 {
+                    font-family: $fira;
+                    font-size: 15px;
+                    color: $white;
+                }
+
+                padding: 1em 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+
+        }
+
+
+        .mob-nav-list {
+            display: flex !important;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            padding: 1em 0;
+
+            button {
+                width: 100%;
+            }
+
+            li {
+                display: block;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    font-size: 13px;
+                    color: $white;
+                    text-decoration: none;
+
+                    &:before {
+                        counter-increment: nav-item;
+                        content: "0"counter(nav-item) ".";
+                        margin-right: 3px;
+                        color: $primary;
+                        font-size: 13px;
+                        font-family: $fira;
+                        text-align: right;
+                        transition: $transition;
+                    }
+
+                }
+            }
+
+            button {
+                display: flex;
+            }
+
+        }
+
+
+
+    }
 }

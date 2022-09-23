@@ -9,7 +9,7 @@
     font-family: $main;
 }
 
-body{
+body {
     position: relative;
 }
 
@@ -22,8 +22,14 @@ button {
     border: none;
 }
 
-.container{
+.container {
     max-width: 1320px !important;
+}
+
+.blur {
+    overflow: hidden !important;
+    position: relative;
+
 }
 
 .main-btn {
@@ -53,6 +59,7 @@ button {
         border: 1px solid $primary !important;
         background: transparent;
         color: $primary;
+
         &:hover {
             background: $primary-tint;
             color: $primary;
@@ -85,6 +92,7 @@ button {
         background-size: cover;
         filter: hue-rotate(150deg);
     }
+
     &:after {
         content: '';
         position: absolute;
