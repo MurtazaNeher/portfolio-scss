@@ -450,7 +450,7 @@ button {
   color: #64ffda;
 }
 .main-nav .nav-wrapper .nav-list li a.active {
-  position: relative;
+  color: #64ffda;
 }
 .main-nav .nav-wrapper .nav-list li a:before {
   counter-increment: nav-item;
@@ -658,7 +658,7 @@ button {
 .page-loader {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -668,6 +668,7 @@ button {
   left: 0;
   z-index: 999999;
   background-color: #0A192F;
+  box-sizing: border-box;
   transition: all 0.4s ease;
 }
 .page-loader.hide {
@@ -676,29 +677,20 @@ button {
 }
 .page-loader h1 {
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
 }
-.page-loader h1 span {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.page-loader h1 span:nth-child(2) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.page-loader h1 span:nth-child(3) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+.page-loader h1 svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 .page-loader svg {
   z-index: 999999999;
-  transition: all 0.5s;
 }
 .page-loader svg .svg-elem-1 {
   stroke-dashoffset: 254.7874145508px;
@@ -721,6 +713,7 @@ button {
 
 .header-sec {
   min-height: 100vh;
+  padding-top: 8em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -765,6 +758,98 @@ button {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
+.header-sec .r-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: flex-start;
+}
+.header-sec .r-part .img-wr {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.header-sec .r-part .img-wr:hover:before {
+  transform: translate(12px, 12px);
+}
+.header-sec .r-part .img-wr:hover img {
+  filter: grayscale(0);
+}
+.header-sec .r-part .img-wr:hover:after {
+  color: #64ffda;
+  font-weight: 900;
+  font-style: italic;
+}
+.header-sec .r-part .img-wr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border: 2px solid #64ffda;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transform: translate(16px, 16px);
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-sec .r-part .img-wr:after {
+  content: "Connect with me";
+  position: absolute;
+  color: #c4cfde;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: upright;
+  transform: translateX(-30px);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 100;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-sec .r-part img {
+  width: 280px;
+  height: 280px;
+  filter: grayscale(1);
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-sec .r-part .scl-list ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-sec .r-part .scl-list ul li a {
+  padding: 0.7em;
+}
+.header-sec .r-part .scl-list ul li a:hover svg {
+  fill: #64ffda;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+.header-sec .r-part .scl-list ul li a svg {
+  fill: #c4cfde;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-sec .r-part .scl-list ul li:last-child a svg {
+  fill: none;
+  stroke: #c4cfde;
+}
+.header-sec .r-part .scl-list ul li:last-child a:hover svg {
+  stroke: #64ffda;
 }
 
 .test {
