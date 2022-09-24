@@ -516,6 +516,9 @@ button {
 }
 
 @media (max-width: 800px) {
+  .main-nav {
+    overflow: unset;
+  }
   .main-nav .nav-wrapper {
     padding: 1em !important;
   }
@@ -544,7 +547,7 @@ button {
   visibility: visible;
   position: fixed;
   z-index: 1001;
-  right: -2px;
+  right: 2px;
   bottom: -2px;
   top: 0;
   width: min(75vw, 400px);
