@@ -54,10 +54,3 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-
-$(document).ready(function() {
-    $('li').click(function() {
-        $("li.active").removeClass("active");
-        $(this).addClass('active');
-    })
-});

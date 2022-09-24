@@ -23,6 +23,8 @@
 
     &.hide {
         transform: translateY(-100%);
+        z-index:-1000;
+
     }
 
     h1 {

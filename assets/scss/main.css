@@ -515,7 +515,7 @@ button {
   width: 100%;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 800px) {
   .main-nav .nav-wrapper {
     padding: 1em !important;
   }
@@ -672,6 +672,7 @@ button {
 }
 .page-loader.hide {
   transform: translateY(-100%);
+  z-index: -1000;
 }
 .page-loader h1 {
   transition: all 0.3s;
