@@ -11,6 +11,26 @@
 body {
     position: relative;
 }
+/* SCROLLBAR */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $primary;
+    border: 4px solid $navy;
+    border-top: none;
+    border-bottom: none;
+    background-clip: content-box;   /* THIS IS IMPORTANT */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $bg;
+    border: $primary;
+}
 
 li {
     list-style: none;
@@ -100,7 +120,7 @@ button {
     color: $light;
     opacity: 0.9;
 
-    &.not-full{
+    &.not-full {
         padding-right: 19%;
     }
 }
@@ -115,12 +135,46 @@ button {
     color: $primary !important;
 }
 
+// Animations
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes blurBg {
     0% {
         backdrop-filter: blur(0px);
     }
-   
+
     100% {
         backdrop-filter: blur(50px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
     }
 }

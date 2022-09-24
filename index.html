@@ -46,6 +46,31 @@
   </head>
 
   <body>
+    <!-- Page loader starts -->
+    <div class="page-loader">
+      <svg class=""
+        width="78"
+        height="90"
+        viewBox="0 0 78 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.5 65.572V23.4601L38.9722 2.88599L75.5 24.428V66.5399L39.0278 87.114L2.5 65.572Z"
+          stroke="#64FFDA"
+          stroke-width="5"
+          class="svg-elem-1"
+        ></path>
+        <path
+          d="M22 59.5718C22 60.9149 23.0853 62 24.4286 62C25.7719 62 26.8571 60.9149 26.8571 59.5718H22ZM24.4286 30.4338L26.4473 29.0831C25.8554 28.1953 24.7473 27.7932 23.7228 28.1043C22.6982 28.4154 22 29.3639 22 30.4338H24.4286ZM39 52.2873L36.9812 53.638C37.429 54.3133 38.1879 54.7155 39 54.7155C39.8121 54.7155 40.571 54.3133 41.0188 53.638L39 52.2873ZM53.5714 30.4338H56C56 29.3639 55.3018 28.423 54.2772 28.1119C53.2527 27.8007 52.1446 28.1953 51.5527 29.0907L53.5714 30.4338ZM51.1429 59.5718C51.1429 60.9149 52.2281 62 53.5714 62C54.9147 62 56 60.9149 56 59.5718H51.1429ZM26.8571 59.5718V30.4338H22V59.5718H26.8571ZM22.4098 31.7845L36.9812 53.638L41.0263 50.9442L26.4549 29.0907L22.4098 31.7845ZM41.0263 53.638L55.5978 31.7845L51.5527 29.0831L36.9812 50.9367L41.0263 53.6304V53.638ZM51.1429 30.4338V59.5718H56V30.4338H51.1429Z"
+          fill="#64FFDA"
+          class="svg-elem-2"
+        ></path>
+      </svg>
+
+      <h1 class="subtitle">loading<span>.</span><span>.</span><span>.</span></h1>
+    </div>
+    <!-- Page loader ends -->
     <!-- Navbar start -->
     <nav class="main-nav">
       <div class="nav-wrapper">
@@ -166,22 +191,21 @@
               </div>
 
               <p class="para not-full pt-20">
-                I’m a web developer specializing in building digital experiences. <br> I build things for the web.  
+                I’m a web developer specializing in building digital
+                experiences. <br />
+                I build things for the web.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-            <div class="r-part">
-              
-            </div>
+            <div class="r-part"></div>
           </div>
         </div>
       </div>
     </header>
     <!-- Header End -->
 
-    <div class="test pt-40 pb-40"></div>
-
+<div class="sec test"></div>
     <!-- jquery js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -192,6 +216,16 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      $(window).on("load", function () {
+        $(".page-loader svg").addClass("active");
+        $("body").css("overflow","hidden");
+
+        setTimeout(function () {
+          $(".page-loader").addClass("hide");
+        $("body").css("overflow","unset");
+
+        }, 1700);
+      });
       $("#toggle").click(function () {
         $(this).toggleClass("on");
         $(".side-menu").toggleClass("hidden");
