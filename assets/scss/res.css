@@ -3,6 +3,13 @@
   .title {
     font-size: 32px !important;
     line-height: 40px !important;
+    text-align: center !important;
+  }
+  .subtitle {
+    text-align: center !important;
+  }
+  #about .para {
+    text-align: justify;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -261,17 +261,60 @@
 
     .l-part {
         width: 100%;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        height: max-content;
+        border-radius: 5px;
+        box-shadow: $shadow-1;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: $transition;
+            border-radius: 5px;
+            border: 2px solid $primary;
+            transform: translate(-13px, 13px);
+            z-index: -2;
+            box-shadow: $shadow-1;
+        }
+
+        &:hover {
+
+            &:after {
+                transform: translate(-9px, 9px);
+            }
+
+            .img-wr {
+
+                img {
+                    filter: grayscale(0);
+                }
+
+                &:before {
+                    opacity: 0;
+                }
+
+            }
+
+        }
 
         .img-wr {
             position: relative;
             z-index: 0;
+            cursor: pointer;
 
             img {
                 width: 100%;
-                border-radius: 5px;
                 filter: grayscale(0.5);
+                transition: $transition;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
             }
-
 
             &:before {
                 content: '';
@@ -285,67 +328,30 @@
                 transition: $transition;
                 z-index: 2;
             }
-
-            
-
-            &:after {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                transition: $transition;
-                border-radius: 5px;
-                border: 2px solid $primary;
-                transform: translate(-10px, 10px);
-                z-index: -2;
-                box-shadow: $shadow-1;
-            }
         }
 
 
-        .info-box-wr{
-            z-index: 0;
-            position: relative;
-             &:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                transition: $transition;
-                border-radius: 5px;
-                border: 2px solid $primary;
-                transform: translate(-10px, 10px);
-                z-index: -1;
-                box-shadow: $shadow-1;
-            }
-
-        }
         .info-box {
             position: relative;
             z-index: 0;
             width: 100%;
-            margin-top: 3em;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            border-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
             border: 2px solid $light-navy;
             background: $navy;
             box-shadow: $shadow-1;
             opacity: 1;
 
-           
-            
             .info-item {
                 border-bottom: 2px solid $light-navy;
                 padding: 0.7em 1.5em;
                 display: flex;
                 flex-direction: row;
                 gap: 5px;
+                overflow: hidden;
 
                 &:last-child {
                     border: none;
@@ -404,6 +410,9 @@
             padding: 2em 0;
 
             li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 svg {
 

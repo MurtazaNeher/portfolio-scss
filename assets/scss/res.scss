@@ -1,8 +1,19 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 479px) {
-    .title{
+    .title {
         font-size: 32px !important;
         line-height: 40px !important;
+        text-align: center !important;
+    }
+
+    .subtitle {
+        text-align: center !important;
+    }
+
+    #about {
+        .para {
+            text-align: justify;
+        }
     }
 }
 
@@ -19,7 +30,7 @@
         line-height: 60px;
     }
 
-    .mob-center{
+    .mob-center {
         text-align: center;
         justify-content: center;
         align-items: center;
