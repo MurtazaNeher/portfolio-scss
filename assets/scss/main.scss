@@ -214,14 +214,15 @@
                     a {
                         padding: 0.7em;
 
-                        &:hover{
+                        &:hover {
 
-                            svg{
+                            svg {
                                 fill: $primary;
                                 transform: translateY(-3px);
                                 box-shadow: $shadow-1;
                             }
                         }
+
                         svg {
                             fill: $light;
                             width: 25px;
@@ -239,8 +240,8 @@
                                 stroke: $light;
                             }
 
-                            &:hover{
-                                svg{
+                            &:hover {
+                                svg {
                                     stroke: $primary;
                                 }
                             }
@@ -255,7 +256,176 @@
 
 }
 
-.test {
-    height: 100vh;
-    border: none;
+#about {
+
+
+    .l-part {
+        width: 100%;
+
+        .img-wr {
+            position: relative;
+            z-index: 0;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+                filter: grayscale(0.5);
+            }
+
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $navy;
+                mix-blend-mode: screen;
+                transition: $transition;
+                z-index: 2;
+            }
+
+            
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: $transition;
+                border-radius: 5px;
+                border: 2px solid $primary;
+                transform: translate(-10px, 10px);
+                z-index: -2;
+                box-shadow: $shadow-1;
+            }
+        }
+
+
+        .info-box-wr{
+            z-index: 0;
+            position: relative;
+             &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: $transition;
+                border-radius: 5px;
+                border: 2px solid $primary;
+                transform: translate(-10px, 10px);
+                z-index: -1;
+                box-shadow: $shadow-1;
+            }
+
+        }
+        .info-box {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 5px;
+            border: 2px solid $light-navy;
+            background: $navy;
+            box-shadow: $shadow-1;
+            opacity: 1;
+
+           
+            
+            .info-item {
+                border-bottom: 2px solid $light-navy;
+                padding: 0.7em 1.5em;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+                &:last-child {
+                    border: none;
+                }
+
+                .ttl {
+                    width: 40%;
+                    color: $light;
+                    font-family: $font-secondary;
+                    font-size: 14px;
+                }
+
+                .info-item-val {
+                    width: 60%;
+
+                    &#mrtz-age {
+                        word-spacing: 0.3em;
+                    }
+
+                    a {
+                        color: $white;
+                        font-family: $font-secondary;
+                        text-decoration: none;
+                        font-size: 16px;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $primary;
+                        }
+
+                    }
+
+                    color: $white;
+                    font-family: $font-secondary;
+                    text-decoration: none;
+                    font-size: 16px;
+
+                }
+            }
+        }
+
+    }
+
+
+    .content {
+        z-index: 20;
+        width: 100%;
+    }
+
+    .tech-grid {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 2em 0;
+
+            li {
+
+                svg {
+
+
+                    &.active {
+                        fill: $primary !important;
+                        transform: scale(1.5);
+                    }
+
+                    &.fill {
+                        fill: $light;
+                        transition: $transition;
+                        cursor: pointer;
+                        width: 50px;
+                        height: 50px;
+
+                        &:hover {
+                            fill: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

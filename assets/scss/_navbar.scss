@@ -131,7 +131,7 @@
 }
 
 
-#toggle {
+#toggle-nav {
     width: 35px;
     height: 30px;
     cursor: pointer;
@@ -143,7 +143,7 @@
     transition: $transition;
 }
 
-#toggle div {
+#toggle-nav div {
     height: 3px;
     background: $primary;
     transition: all 0.3s;
@@ -167,7 +167,7 @@
 }
 
 
-#toggle.on {
+#toggle-nav.on {
     transform: rotate(360deg);
     width: 30px;
 
@@ -176,17 +176,17 @@
     }
 }
 
-#toggle.on .one {
+#toggle-nav.on .one {
     transform: rotate(45deg) translate(5px, 5px);
     width: 100%;
 
 }
 
-#toggle.on .two {
+#toggle-nav.on .two {
     opacity: 0;
 }
 
-#toggle.on .three {
+#toggle-nav.on .three {
     transform: rotate(-45deg) translate(7px, -8px);
     width: 100%;
 
@@ -222,7 +222,7 @@
         }
     }
 
-    #toggle {
+    #toggle-nav {
         display: flex;
         gap: 6px;
     }
@@ -241,7 +241,7 @@
     visibility: visible;
     position: fixed;
     z-index: 1001;
-    right: 2px;
+    right: -2px;
     bottom: -2px;
     top: 0;
     width: min(75vw, 400px);
@@ -249,19 +249,6 @@
     background-color: $light-navy;
     box-shadow: -10px 0px 30px -15px $navy-shadow;
     transition: $transition;
-
-
-    &:before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        transform: translateX(-100%);
-        backdrop-filter: blur(6px);
-        z-index: 99;
-        top: 0;
-        left: 0;
-    }
-
 
     &.hidden {
         transform: translateX(100vw);
@@ -364,7 +351,7 @@
                 a {
                     display: block;
                     width: 100%;
-                    font-size: 13px;
+                    font-size: 16px;
                     color: $white;
                     text-decoration: none;
 
@@ -373,7 +360,7 @@
                         content: "0"counter(nav-item) ".";
                         margin-right: 3px;
                         color: $primary;
-                        font-size: 13px;
+                        font-size: 16px;
                         font-family: $fira;
                         text-align: right;
                         transition: $transition;
