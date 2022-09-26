@@ -440,6 +440,31 @@
 }
 
 .project-sec {
+
+    .rotate-ovr {
+        position: absolute;
+        
+
+        &.top-right {
+            right: -6%;
+            top: 0;
+        }
+
+        &.bottom-left {
+            left: -6%;
+            bottom: 0;
+        }
+
+
+        svg {
+            fill: $light !important;
+            width: 250px;
+            opacity: 0.3;
+          
+
+        }
+    }
+
     .prSwiper {
         width: 100%;
 
@@ -457,7 +482,6 @@
                     max-width: 100%;
                     height: 400px;
                     max-width: 100%;
-                    overflow: hidden;
                     border-radius: 4px;
                     background-color: $light-navy;
                     transition: $transition;
@@ -465,6 +489,9 @@
                     padding: 2em 1.7em;
                     cursor: pointer;
                     position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
                     .link-icon {
                         width: 30px;
@@ -486,7 +513,7 @@
 
                         .link-icon {
                             opacity: 1;
-                        transform: rotate(0deg);
+                            transform: rotate(0deg);
 
                         }
 
@@ -516,12 +543,18 @@
                     }
 
                     .pr-card-body {
-
                         padding: 1em 0em;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        overflow: hidden;
+                        max-height: 100%;
+                        position: relative;
 
                         .pr-card-title {
-                            font-size: 20px;
+                            font-size: 22px;
                             color: $lightest;
+
                         }
 
                         .date {
@@ -535,12 +568,15 @@
                             line-height: normal;
                             text-align: justify;
                         }
+
+
                     }
 
                     .pr-card-tech-list {
 
                         ul {
                             padding: 0;
+                            margin: 0;
                             display: flex;
                             flex-wrap: wrap;
                             gap: 10px;
@@ -548,26 +584,27 @@
 
                             li {
                                 background-color: $navy;
-                                padding: 0.3em 0.7em;
+                                padding: 0.4em 0.9em;
                                 font-size: 10px;
-                                color: $primary;
+                                color: $light;
                                 border-radius: 50px;
                             }
                         }
 
                     }
+
                 }
             }
         }
 
 
-        .pr-swiper-btns{
+        .pr-swiper-btns {
             display: flex;
             justify-content: center;
             gap: 30px;
             margin-bottom: 1em;
 
-            button{
+            button {
                 outline: none;
                 border: none;
                 background-color: $light-navy;
@@ -580,25 +617,28 @@
                 align-items: center;
                 transition: $transition;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.1);
                     background-color: $primary;
-                     svg{
+
+                    svg {
                         fill: $navy;
-                     }
+                    }
                 }
 
-                &.pr-button-next{
+                &.pr-button-next {
                     transform: rotate(180deg);
-                    &:hover{
+
+                    &:hover {
                         transform: rotate(180deg) scale(1.1);
                     }
                 }
-                 svg{
+
+                svg {
                     fill: $primary;
                     height: 20px;
                     transition: $transition;
-                 }
+                }
             }
         }
     }

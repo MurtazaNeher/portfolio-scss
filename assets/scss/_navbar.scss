@@ -127,6 +127,16 @@
                 }
             }
         }
+
+        .main-btn {
+            width: max-content;
+            padding: 0.9em 1em;
+            line-height: 1;
+            border-radius: 4px;
+            font-family: $main;
+            font-size: 13px;
+            font-weight: 500;
+        }
     }
 }
 

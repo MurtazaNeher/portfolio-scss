@@ -47,7 +47,7 @@ button {
     max-width: 1320px !important;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
@@ -63,15 +63,27 @@ a{
     line-height: 1;
     border-radius: 4px;
     font-family: $main;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     transition: $transition;
     color: $dark;
+    padding: 1.25rem 1.75rem;
 
     &:hover {
         background: transparent;
         color: $primary;
-        border-color: $primary
+        border-color: $primary;
+        transform: translateY(-3px);
+        box-shadow: $shadow-1;
+    }
+
+    &.lg{
+    padding: 1.25rem 3.75rem;
+    max-width: 100%;
+    }
+
+    &.center{
+        margin: auto;
     }
 
     &.border {
@@ -222,6 +234,7 @@ a{
         transform: translate(0, 0px);
     }
 }
+
 @keyframes floatingRev {
     0% {
         transform: translate(0, 15px);

@@ -96,3 +96,11 @@ window.onload = function () {
 // }
 
 // timer = setInterval(age, 1000);
+
+window.onscroll = function () {
+// $(".project-sec .rotate-ovr.bottom-left").css("rotate":$window.pageYOffset/2+"deg");
+let image = document.querySelector(".project-sec .rotate-ovr.top-right");
+image.style.transform = "rotate(" + (window.pageYOffset/2) + "deg) ";
+let image2 = document.querySelector(".project-sec .rotate-ovr.bottom-left");
+image2.style.transform = "rotate(" + (window.pageYOffset/2) + "deg) ";
+};

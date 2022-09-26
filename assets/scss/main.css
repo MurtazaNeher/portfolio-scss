@@ -145,15 +145,25 @@ a {
   line-height: 1;
   border-radius: 4px;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: #060606;
+  padding: 1.25rem 1.75rem;
 }
 .main-btn:hover {
   background: transparent;
   color: #64ffda;
   border-color: #64ffda;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+.main-btn.lg {
+  padding: 1.25rem 3.75rem;
+  max-width: 100%;
+}
+.main-btn.center {
+  margin: auto;
 }
 .main-btn.border {
   border: 1px solid #64ffda !important;
@@ -533,6 +543,17 @@ a {
   font-family: "Fira Code", monospace;
   text-align: right;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.main-nav .nav-wrapper .main-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.9em 1em;
+  line-height: 1;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 #toggle-nav {
@@ -1056,6 +1077,22 @@ a {
   fill: #64ffda;
 }
 
+.project-sec .rotate-ovr {
+  position: absolute;
+}
+.project-sec .rotate-ovr.top-right {
+  right: -6%;
+  top: 0;
+}
+.project-sec .rotate-ovr.bottom-left {
+  left: -6%;
+  bottom: 0;
+}
+.project-sec .rotate-ovr svg {
+  fill: #c4cfde !important;
+  width: 250px;
+  opacity: 0.3;
+}
 .project-sec .prSwiper {
   width: 100%;
 }
@@ -1072,7 +1109,6 @@ a {
   max-width: 100%;
   height: 400px;
   max-width: 100%;
-  overflow: hidden;
   border-radius: 4px;
   background-color: #112240;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -1080,6 +1116,9 @@ a {
   padding: 2em 1.7em;
   cursor: pointer;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .link-icon {
   width: 30px;
@@ -1118,9 +1157,15 @@ a {
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .pr-card-body {
   padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  max-height: 100%;
+  position: relative;
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .pr-card-body .pr-card-title {
-  font-size: 20px;
+  font-size: 22px;
   color: #ccd6f6;
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .pr-card-body .date {
@@ -1135,6 +1180,7 @@ a {
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .pr-card-tech-list ul {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -1142,9 +1188,9 @@ a {
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide .pr-card .pr-card-tech-list ul li {
   background-color: #0A192F;
-  padding: 0.3em 0.7em;
+  padding: 0.4em 0.9em;
   font-size: 10px;
-  color: #64ffda;
+  color: #c4cfde;
   border-radius: 50px;
 }
 .project-sec .prSwiper .pr-swiper-btns {
