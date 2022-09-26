@@ -438,3 +438,126 @@
         }
     }
 }
+
+.project-sec {
+    .prSwiper {
+        width: 100%;
+
+        .swiper-wrapper {
+            padding: 1em 1em;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .pr-card {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 400px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    background-color: $light-navy;
+                    transition: $transition;
+                    box-shadow: $shadow-1;
+                    padding: 2em 1.7em;
+                    cursor: pointer;
+                    position: relative;
+
+                    .link-icon {
+                        width: 30px;
+                        box-shadow: $shadow-1;
+                        opacity: 0;
+                        transition: $transition;
+                        transform: rotate(50deg);
+                    }
+
+                    &:hover {
+
+                        transform: translateY(-6px);
+
+                        .img-wr {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        .link-icon {
+                            opacity: 1;
+                        transform: rotate(0deg);
+
+                        }
+
+                        .pr-card-body {
+
+                            .pr-card-title {
+                                color: $primary;
+                            }
+                        }
+
+                    }
+
+                    .img-wr {
+                        height: 150px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: $transition;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            object-fit: fill;
+                            width: 100%;
+                            border-radius: 4px;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+
+                    .pr-card-body {
+
+                        padding: 1em 0em;
+
+                        .pr-card-title {
+                            font-size: 20px;
+                            color: $lightest;
+                        }
+
+                        .date {
+                            color: $light;
+                            font-size: 11px;
+                        }
+
+                        .para {
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: normal;
+                            text-align: justify;
+                        }
+                    }
+
+                    .pr-card-tech-list {
+
+                        ul {
+                            padding: 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                            justify-content: flex-start;
+
+                            li {
+                                background-color: $navy;
+                                padding: 0.3em 0.7em;
+                                font-size: 10px;
+                                color: $primary;
+                                border-radius: 50px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
