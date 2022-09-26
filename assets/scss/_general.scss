@@ -43,9 +43,16 @@ button {
     border: none;
 }
 
-.container {
-    max-width: 1320px !important;
+#main{
+    .container {
+        margin: 0px auto;
+        width: 100%;
+        max-width: 1600px;
+        padding: 0px 150px;
+    }
 }
+
+
 
 a {
     text-decoration: none !important;
@@ -77,12 +84,12 @@ a {
         box-shadow: $shadow-1;
     }
 
-    &.lg{
-    padding: 1.25rem 3.75rem;
-    max-width: 100%;
+    &.lg {
+        padding: 1.25rem 3.75rem;
+        max-width: 100%;
     }
 
-    &.center{
+    &.center {
         margin: auto;
     }
 
@@ -121,7 +128,7 @@ a {
     font-weight: 500;
     display: block;
     margin-bottom: 20px;
-
+    
     &.sec-title {
         display: block;
         line-height: 14px;
