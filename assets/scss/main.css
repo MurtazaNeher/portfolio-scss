@@ -1060,7 +1060,7 @@ a {
   width: 100%;
 }
 .project-sec .prSwiper .swiper-wrapper {
-  padding: 1em 1em;
+  padding: 2em 0;
 }
 .project-sec .prSwiper .swiper-wrapper .swiper-slide {
   display: flex;
@@ -1146,4 +1146,41 @@ a {
   font-size: 10px;
   color: #64ffda;
   border-radius: 50px;
+}
+.project-sec .prSwiper .pr-swiper-btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 1em;
+}
+.project-sec .prSwiper .pr-swiper-btns button {
+  outline: none;
+  border: none;
+  background-color: #112240;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.project-sec .prSwiper .pr-swiper-btns button:hover {
+  transform: scale(1.1);
+  background-color: #64ffda;
+}
+.project-sec .prSwiper .pr-swiper-btns button:hover svg {
+  fill: #0A192F;
+}
+.project-sec .prSwiper .pr-swiper-btns button.pr-button-next {
+  transform: rotate(180deg);
+}
+.project-sec .prSwiper .pr-swiper-btns button.pr-button-next:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+.project-sec .prSwiper .pr-swiper-btns button svg {
+  fill: #64ffda;
+  height: 20px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }/*# sourceMappingURL=main.css.map */

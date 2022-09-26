@@ -444,7 +444,7 @@
         width: 100%;
 
         .swiper-wrapper {
-            padding: 1em 1em;
+            padding: 2em 0;
 
             .swiper-slide {
                 display: flex;
@@ -557,6 +557,48 @@
 
                     }
                 }
+            }
+        }
+
+
+        .pr-swiper-btns{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 1em;
+
+            button{
+                outline: none;
+                border: none;
+                background-color: $light-navy;
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: $transition;
+
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: $primary;
+                     svg{
+                        fill: $navy;
+                     }
+                }
+
+                &.pr-button-next{
+                    transform: rotate(180deg);
+                    &:hover{
+                        transform: rotate(180deg) scale(1.1);
+                    }
+                }
+                 svg{
+                    fill: $primary;
+                    height: 20px;
+                    transition: $transition;
+                 }
             }
         }
     }
