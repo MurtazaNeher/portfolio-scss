@@ -690,24 +690,45 @@
 
     }
 
-    .prSwiper {
+
+}
+
+.blog-sec {
+    background: url(/assets/images/common-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $navy;
+        opacity: 0.99;
+        mix-blend-mode: multiply;
+    }
+
+    .blogSwiper {
         width: 100%;
 
         .swiper-wrapper {
             padding: 2em 0;
+            height: 100%;
 
             .swiper-slide {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-
-
+                height: 100%;
             }
         }
 
 
-        .pr-swiper-btns {
+        .blog-swiper-btns {
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -735,7 +756,7 @@
                     }
                 }
 
-                &.pr-button-next {
+                &.blog-button-next {
                     transform: rotate(180deg);
 
                     &:hover {
@@ -751,24 +772,107 @@
             }
         }
     }
-}
 
-.blog-sec {
-    background: url(/assets/images/common-bg.svg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        min-width: 250px;
         height: 100%;
-        background: $navy;
-        opacity: 0.99;
-        mix-blend-mode:multiply;
+        max-width: 100%;
+        position: relative;
+        background: $light-navy;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: $shadow-1;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
+
+        .date {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(10px, 10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            box-shadow: $shadow-1;
+            width: 45px;
+            height: 45px;
+            border-radius: 4px;
+            font-weight: 500;
+            color: #000000;
+            font-size: 12px;
+            border: none;
+            outline: none;
+        }
+
+        .img-wr {
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .blog-body {
+            max-height: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 1.3em 1em;
+            justify-content: space-between;
+
+            .blog-title {
+                font-size: 22px;
+                color: $white;
+            }
+
+            .para {
+                font-size: 14px;
+            }
+
+            .link-btn {
+                display: flex;
+                background-color: transparent;
+                width: max-content;
+                margin: auto;
+                text-align: center;
+                color: $primary;
+                justify-content: center;
+                transition: $transition;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    height: 1px;
+                    width: 0;
+                    left: 0;
+                    background: $primary;
+                    opacity: 0.6;
+                    transition: $transition;
+                }
+
+                &:hover {
+                    color: $light;
+
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
