@@ -694,6 +694,7 @@
 }
 
 .blog-sec {
+    position: relative;
     background: url(/assets/images/common-bg.svg);
     background-size: cover;
     background-position: center center;
@@ -710,6 +711,7 @@
         background: $navy;
         opacity: 0.99;
         mix-blend-mode: multiply;
+        z-index: 0;
     }
 
     .blogSwiper {

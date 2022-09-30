@@ -251,6 +251,10 @@ a {
   overflow: hidden !important;
 }
 
+.z-10 {
+  z-index: 10 !important;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1262,6 +1266,7 @@ a {
 }
 
 .blog-sec {
+  position: relative;
   background: url(/assets/images/common-bg.svg);
   background-size: cover;
   background-position: center center;
@@ -1278,6 +1283,7 @@ a {
   background: #0A192F;
   opacity: 0.99;
   mix-blend-mode: multiply;
+  z-index: 0;
 }
 .blog-sec .blogSwiper {
   width: 100%;
