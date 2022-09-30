@@ -1428,4 +1428,58 @@ a {
 }
 .blog-sec .blog-card .blog-body .link-btn:hover:before {
   width: 100%;
+}
+
+.footer-sec .logo svg {
+  width: 30px;
+}
+.footer-sec .logo svg .logo-stroke {
+  stroke: #64ffda;
+}
+.footer-sec .logo svg .logo-icon {
+  fill: #64ffda;
+}
+.footer-sec .ft-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-sec .ft-list .ft-list-head {
+  height: 40px;
+}
+.footer-sec .ft-list .ft-list-head a {
+  font-size: 22px;
+  color: #64ffda;
+}
+.footer-sec .ft-list li a {
+  padding: 0.5em 0;
+  color: #c4cfde;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.footer-sec .ft-list li a svg {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.footer-sec .ft-list li a:hover {
+  color: #64ffda;
+}
+.footer-sec .ft-list li.icon-li:hover a svg {
+  fill: #64ffda;
+  transform: scale(1.2);
+}
+.footer-sec .ft-list .icon-li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-sec .ft-list .icon-li a svg {
+  width: 20px;
+  height: 20px;
+  fill: #c4cfde;
+}
+
+.ft-copy .para {
+  padding: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
