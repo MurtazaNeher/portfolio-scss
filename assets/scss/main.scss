@@ -5,6 +5,8 @@
 
 // Main
 #main {
+    background: $navy;
+    min-height: 100vh;
 
     .left-side-socail-list {
         position: fixed;
@@ -85,6 +87,7 @@
             align-items: center;
             flex-direction: column;
 
+
             &:after {
                 content: '';
                 display: block;
@@ -110,6 +113,7 @@
 
             &:hover {
                 color: $primary;
+                transform: translateY(-4px);
             }
 
         }
@@ -774,104 +778,108 @@
         }
     }
 
-    .blog-card {
+}
+
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    min-width: 250px;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    background: $light-navy;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: $shadow-1;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-6px);
+    }
+
+    .date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10px, 10px);
         display: flex;
         flex-direction: column;
-        width: 330px;
-        min-width: 250px;
-        height: 100%;
-        max-width: 100%;
-        position: relative;
-        background: $light-navy;
-        border-radius: 4px;
-        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
         box-shadow: $shadow-1;
-        transition: $transition;
-        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 4px;
+        font-weight: 500;
+        color: #000000;
+        font-size: 12px;
+        border: none;
+        outline: none;
+    }
 
-        &:hover {
-            transform: translateY(-6px);
-        }
+    .img-wr {
+        width: 100%;
+        height: 200px;
 
-        .date {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(10px, 10px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: $white;
-            box-shadow: $shadow-1;
-            width: 45px;
-            height: 45px;
-            border-radius: 4px;
-            font-weight: 500;
-            color: #000000;
-            font-size: 12px;
-            border: none;
-            outline: none;
-        }
-
-        .img-wr {
+        img {
             width: 100%;
-            height: 200px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+    .blog-body {
+        max-height: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1.3em 1em;
+        justify-content: space-between;
+
+        .blog-title {
+            font-size: 22px;
+            color: $white;
         }
 
-        .blog-body {
-            max-height: 100%;
-            height: 250px;
+        .para {
+            font-size: 14px;
+        }
+
+        .link-btn {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 1.3em 1em;
-            justify-content: space-between;
+            background-color: transparent;
+            width: max-content;
+            margin: auto;
+            text-align: center;
+            color: $primary;
+            justify-content: center;
+            transition: $transition;
+            position: relative;
 
-            .blog-title {
-                font-size: 22px;
-                color: $white;
-            }
-
-            .para {
-                font-size: 14px;
-            }
-
-            .link-btn {
-                display: flex;
-                background-color: transparent;
-                width: max-content;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                height: 1px;
+                width: 0;
+                left: 0;
+                right: 0;
                 margin: auto;
-                text-align: center;
-                color: $primary;
-                justify-content: center;
+                background: $primary;
+                opacity: 0.6;
                 transition: $transition;
-                position: relative;
+            }
+
+            &:hover {
+                color: $light;
 
                 &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: -3px;
-                    height: 1px;
-                    width: 0;
-                    left: 0;
-                    background: $primary;
-                    opacity: 0.6;
-                    transition: $transition;
-                }
-
-                &:hover {
-                    color: $light;
-
-                    &:before {
-                        width: 100%;
-                    }
+                    width: 100%;
                 }
             }
         }
@@ -958,10 +966,59 @@
     }
 }
 
-.ft-copy{
+.ft-copy {
 
-    .para{
+    .para {
         padding: 0;
         font-size: 14px;
     }
+}
+
+.project-page {
+    counter-reset: num-heading;
+
+    .num-heading {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        font-size: 32px;
+        white-space: nowrap;
+        color: $lightest;
+        line-height: normal;
+        max-width: 100%;
+
+        &:before {
+            position: relative;
+            counter-increment: num-heading;
+            content: "0"counter(num-heading) ".";
+            margin-right: 10px;
+            color: $primary;
+            font-family: $fira;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 300px;
+            height: 1px;
+            margin-left: 10px;
+            background-color: $light;
+            opacity: 0.2;
+            top: 5px;
+        }
+    }
+
+}
+
+.blog-grid-wr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 30px;
+    margin-top: 2em;
 }

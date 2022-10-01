@@ -41,6 +41,10 @@
   padding-top: 100px !important;
 }
 
+.pt-120 {
+  padding-top: 120px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -410,6 +414,10 @@ a {
 
 .pt-100 {
   padding-top: 100px !important;
+}
+
+.pt-120 {
+  padding-top: 120px !important;
 }
 
 .mb-20 {

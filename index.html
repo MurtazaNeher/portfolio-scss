@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Murtaza Neher Wala | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
 
     <meta
       name="description"
@@ -262,8 +263,8 @@
             <ul class="nav-list">
               <li><a href="#home" class="active home">Home</a></li>
               <li><a href="#about" class="about">About</a></li>
-              <li><a href="project.html" class="projects">Projecs</a></li>
-              <li><a href="#blogs" class="blogs">Blogs</a></li>
+              <li><a href="project.html" class="projects">Projects</a></li>
+              <li><a href="blogs.html" class="blogs">Blogs</a></li>
             </ul>
             <button href="#" class="main-btn border">Resume</button>
             <!-- <button href="#" class="main-btn">Hire Now</button> -->
@@ -307,8 +308,8 @@
                 <ul class="mob-nav-list">
                   <li><a href="#home" class="active home">Home</a></li>
                   <li><a href="#about" class="about">About</a></li>
-                  <li><a href="project.html" class="projects">Projecs</a></li>
-                  <li><a href="#blogs" class="blogs">Blogs</a></li>
+                  <li><a href="project.html" class="projects">Projects</a></li>
+                  <li><a href="blogs.html" class="blogs">Blogs</a></li>
                   <li>
                     <button href="#" class="main-btn border">Resume</button>
                   </li>
@@ -328,7 +329,7 @@
         <div class="container">
           <div class="row align-items-center row-wrap-reverse">
             <div class="col-lg-7 col-md-7 col-sm-12 col-12">
-              <div class="l-part pt-20 mob-center">
+              <div class="l-part pt-20 mob-center" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="500">
                 <h2 class="subtitle">Welcome to my portfolio</h2>
 
                 <h1 class="title pt-2">
@@ -453,7 +454,7 @@
         <div class="container">
           <div class="row align-items-center g-5 flex-wrap-reverse">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="l-part">
+              <div class="l-part" data-aos="fade-right">
                 <div class="img-wr">
                   <img src="assets/images/murtaza-about-photo.jpg" alt="" />
                 </div>
@@ -1432,7 +1433,11 @@
           </div>
         </div>
       </section>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+      <script>
+        AOS.init();
+      </script>
       <!-- jquery js -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -1455,7 +1460,7 @@
             $(".page-loader").addClass("hide");
             // $("body").css("overflow", "unset");
             $(".page-loader svg").removeClass("active");
-          }, 2200);
+          }, 1800);
         });
         $("#toggle-nav").click(function () {
           $(this).toggleClass("on");
