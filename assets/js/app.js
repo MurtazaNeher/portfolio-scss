@@ -1,24 +1,25 @@
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(
-  ".main-nav .nav-wrapper .nav-list li a"
-);
-window.onscroll = () => {
-  var current = "";
+// Mob Nav toggle
+$("#toggle-nav").click(function () {
+  $(this).toggleClass("on");
+  $(".side-menu").toggleClass("hidden");
+  $(".side-menu").toggleClass("visible");
+  $("#main").toggleClass("blur-bg");
+  $("body").toggleClass("fix");
+  $(".main-nav .nav-wrapper").toggleClass("blur-bg");
+});
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id");
-    }
-  });
+// Nav sticky
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    $(".main-nav").addClass("sticky");
+  } else {
+    $(".main-nav").removeClass("sticky");
+  }
+});
 
-  navLi.forEach((a) => {
-    a.classList.remove("active");
-    if (a.classList.contains(current)) {
-      a.classList.add("active");
-    }
-  });
-};
+
+
+// Type writer
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;

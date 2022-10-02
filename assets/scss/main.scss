@@ -2,6 +2,7 @@
 @import 'theme';
 @import 'spacing';
 @import 'navbar';
+@import 'anim';
 
 // Main
 #main {
@@ -617,7 +618,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            overflow: hidden;
+            overflow: visible;
             position: relative;
             height: 100%;
 
@@ -648,26 +649,22 @@
                     font-size: 20px;
                     color: $lightest;
                     font-weight: 500;
-                    padding-bottom: 0.4em;
+                    text-transform: capitalize;
                 }
 
                 .date {
                     color: $light;
                     font-size: 11px;
+                    text-transform: capitalize;
                 }
 
                 .para {
-                    font-size: 12px;
+                    font-size: 13px;
                     color: $light-slate;
                     font-weight: 400;
                     line-height: normal;
-                    // text-align: justify;
                 }
             }
-
-
-
-
         }
 
         .pr-card-tech-list {
@@ -686,6 +683,7 @@
                     font-size: 10px;
                     color: $light;
                     border-radius: 50px;
+                    text-transform: uppercase;
                 }
             }
 
