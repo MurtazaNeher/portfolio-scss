@@ -1,57 +1,64 @@
-.reveal {
-    position: relative;
-    opacity: 0;
+// .reveal {
+//     position: relative;
+//     opacity: 0;
 
-    &.active {
-        opacity: 1;
 
-        &.fade-bottom {
-            animation: fade-bottom 0.5s ease-in-out;
-        }
+//     &.fade-bottom {
+//         transform: translateY(100px);
+//         // transition: all 1s ease !important;
+//     }
 
-        &.fade-left {
-            animation: fade-left 1s ease-in;
-        }
+//     &.fade-left {
+//         animation: fade-left 1s ease-in;
+//     }
 
-        &.fade-right {
-            animation: fade-right 1s ease-in;
-        }
-        
-    }
-}
+//     &.fade-right {
+//         animation: fade-right 1s ease-in;
+//     }
 
-@keyframes fade-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
+//     &.active {
+//         opacity: 1;
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+//         &.fade-bottom {
+//             transform: translateY(0px);
+//         }
 
-@keyframes fade-left {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
+//         transition: all 1s ease;
+//     }
+// }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+// // @keyframes fade-bottom {
+// //     0% {
+// //         transform: translateY(50px);
+// //         opacity: 0;
+// //     }
 
-@keyframes fade-right {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
+// //     100% {
+// //         transform: translateY(0);
+// //         opacity: 1;
+// //     }
+// // }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+// // @keyframes fade-left {
+// //     0% {
+// //         transform: translateX(-100px);
+// //         opacity: 0;
+// //     }
+
+// //     100% {
+// //         transform: translateX(0);
+// //         opacity: 1;
+// //     }
+// // }
+
+// // @keyframes fade-right {
+// //     0% {
+// //         transform: translateX(100px);
+// //         opacity: 0;
+// //     }
+
+// //     100% {
+// //         transform: translateX(0);
+// //         opacity: 1;
+// //     }
+// // }

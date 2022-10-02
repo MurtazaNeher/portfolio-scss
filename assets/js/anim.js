@@ -15,6 +15,9 @@
 // }
 
 // window.addEventListener("scroll", reveal);
+
+
+// window.addEventListener("scroll", reveal);
 $(document).ready(function () {
   $(".anim-up").attr({
     "data-aos": "fade-up",

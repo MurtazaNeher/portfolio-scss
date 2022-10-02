@@ -154,7 +154,6 @@ a {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: #060606;
   padding: 1.25rem 1.75rem;
 }
@@ -162,7 +161,6 @@ a {
   background: transparent;
   color: #64ffda;
   border-color: #64ffda;
-  transform: translateY(-3px);
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 .main-btn.lg {
@@ -607,9 +605,9 @@ a {
   display: flex !important;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   position: relative;
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 .side-menu .mob-nav .mob-nav-list button {
   width: 100%;
@@ -627,7 +625,7 @@ a {
 .side-menu .mob-nav .mob-nav-list li a:before {
   counter-increment: nav-item;
   content: "0" counter(nav-item) ".";
-  margin-right: 3px;
+  margin-right: 4px;
   color: #64ffda;
   font-size: 16px;
   font-family: "Fira Code", monospace;
