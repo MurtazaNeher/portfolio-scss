@@ -622,6 +622,9 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+.side-menu .mob-nav .mob-nav-list li a.active {
+  color: #64ffda;
+}
 .side-menu .mob-nav .mob-nav-list li a:before {
   counter-increment: nav-item;
   content: "0" counter(nav-item) ".";
@@ -1290,6 +1293,7 @@ a {
   gap: 10px;
   padding: 1.3em 1em;
   justify-content: space-between;
+  overflow: hidden;
 }
 .blog-card .blog-body .blog-title {
   font-size: 22px;
@@ -1297,6 +1301,14 @@ a {
 }
 .blog-card .blog-body .para {
   font-size: 14px;
+}
+.blog-card .blog-body footer {
+  position: absolute;
+  left: 0;
+  bottom: 1.3em;
+  width: 100%;
+  background: #112240;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 .blog-card .blog-body .link-btn {
   display: flex;
@@ -1393,7 +1405,7 @@ a {
   align-items: center;
   position: relative;
   width: 100%;
-  font-size: 32px;
+  font-size: 25px;
   white-space: nowrap;
   color: #ccd6f6;
   line-height: normal;
