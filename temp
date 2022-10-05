@@ -1,0 +1,726 @@
+<div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://mnw.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">portfolio</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            past portfolio
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">Aug , 2022</h6>
+
+          <p class="para">
+            This is my old portfolio I made when I learned
+            javascript.
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>Html</li>
+              <li>css</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://murtazanw.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">portfolio</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            my first portfolio
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">Aug , 2022</h6>
+
+          <p class="para">
+            This is first portfolio.I built it when i started my
+            web development journey.I used to improve it whenever
+            I learn any new thing ;)
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>Html</li>
+              <li>css</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://texttools-murtaza.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web tool</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            text editor
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">may , 2022</h6>
+
+          <p class="para">
+            Simple and efficient text editor tool. You can remove
+            extra spaces , convert text to uppercase & lowercase ,
+            copy text , calculate number of characters and words
+            present in it. Night mode is also enable.
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+              <li>react</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://resume-generator-murtaza.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web tool</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            resume generator
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">may , 2022</h6>
+
+          <p class="para">
+            You also struggled in making your resumes / cv ? So
+            here this web apps come in your rescue.This web app
+            generates a beautiful & professional resume for you in
+            just few steps . You can also change color , font and
+            font-size according to your choice.
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://parenthesi-cheker-murtaza.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web tool</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            Parentheses Checker
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">may , 2022</h6>
+
+          <p class="para">
+            This web app checks the parenthesis, curly & square
+            brackets of your given expressions and code and tells
+            if is there is any error in your expression or not .
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://murtaza-tictac.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web game</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            tic tac toe
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">april, 2022</h6>
+
+          <p class="para">
+            A multiplayer Tik Tac Toe game , it never let you get
+            board . So don't waste papers and play your "x" , "o"
+            game here.
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://impossible-21-murtaza.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web game</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            Impossible 21!!!
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">mar, 2022</h6>
+
+          <p class="para">
+            A very simple but interesting tricky web game . I bet
+            you can't win this game atleast in your first 50 play
+            !
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://powerupgym.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">landig page</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            Gym landing page
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">mar, 2022</h6>
+
+          <p class="para">This is a landig page for the gym.</p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://predictor-2-murtaza.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">web app</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            predictor 2.0
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">mar, 2022</h6>
+
+          <p class="para">
+            This is version 2 of Predictor . Must check this out
+            for amazing mind number reading experience.
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
+  <div class="anim-up">
+    <a
+      class="pr-card"
+      href="https://csb-sulmw.netlify.app/"
+      target="_blank"
+    >
+      <div class="pr-card-body">
+        <header>
+          <div class="top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <title>Folder</title>
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+
+            <div class="cat">React app</div>
+          </div>
+
+          <h1 class="pr-card-title">
+            Predictor
+            <svg
+              class="link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-external-link"
+            >
+              <title>External Link</title>
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </h1>
+          <h6 class="date">Feb, 2022</h6>
+
+          <p class="para">
+            This react will blew your mind by doing some mind
+            reading tricks , try this app once . It will
+            definately amaze you :)
+          </p>
+        </header>
+
+        <footer>
+          <div class="pr-card-tech-list">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+              <li>react</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </a>
+  </div>
