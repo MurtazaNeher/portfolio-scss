@@ -42,12 +42,13 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px)and(min-width: 769px) {
-    
+
     #main {
         .container {
             padding: 0px 70px !important;
         }
     }
+
     .title {
         font-size: 50px;
         line-height: 60px;
@@ -70,6 +71,12 @@
         .left-side-socail-list,
         .right-side-email {
             display: none !important;
+        }
+
+        .float-chat-icon {
+            right: 10px;
+            bottom: 20px;
+            left: auto;
         }
 
     }

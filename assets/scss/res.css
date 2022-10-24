@@ -46,4 +46,9 @@
 #main .right-side-email {
     display: none !important;
   }
+  #main .float-chat-icon {
+    right: 10px;
+    bottom: 20px;
+    left: auto;
+  }
 }/*# sourceMappingURL=res.css.map */
